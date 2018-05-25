@@ -1,0 +1,7 @@
+.next
+data
+.data
+node_modules
+backups
+.env
+.idea

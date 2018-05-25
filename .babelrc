@@ -1,0 +1,35 @@
+{
+    "presets": [
+        [
+            "next/babel"
+        ]
+    ],
+    "plugins": [
+        "transform-decorators-legacy",
+        [
+            "import",
+            [
+                {
+                    "libraryName": "antd"
+                },
+                {
+                    "libraryName": "antd-mobile"
+                }
+            ]
+        ],
+        [
+            "module-resolver", {
+            "root": ["."],
+            "alias": {
+                "styles": "./static/css"
+            },
+            "cwd": "babelrc"
+        }],
+        [
+            "wrap-in-js",
+            {
+                "extensions": ["css$", "scss$"]
+            }
+        ]
+    ]
+}
